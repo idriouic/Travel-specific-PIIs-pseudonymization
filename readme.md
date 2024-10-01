@@ -33,6 +33,7 @@ The project is organized into several Python modules for better scalability and 
 
 4. **`generators.py`**: Implements custom fake data generators that create realistic synthetic data for aviation-related entities (e.g., generating fake PNRs or e-tickets).
 
+5. **`test_pseudonymizer.py`**: Contains unit tests for the CustomPseudonymizer class, validating the accuracy of the pseudonymization process and ensuring that sensitive information is properly anonymized while maintaining a correct mapping for potential deanonymization.
 
 ## Usage
 
