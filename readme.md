@@ -1,6 +1,6 @@
 # TravelSpecific PIIs Pseudonymization (TPP)
 
-**TravelSpecificPIIPseudonymization** is a Python-based tool designed to detect and pseudonymize personally identifiable information (PII) in travel-related documents. It leverages custom recognizers and fake data generators for specific aviation industry entities such as Passenger Name Records (PNRs), e-tickets, flight numbers, airline and aircraft codes, and airport codes. The pseudonymization tool ensures the privacy and confidentiality of sensitive data commonly found in aviation documents, making it suitable for airline companies, travel agencies, and other organizations dealing with flight information.
+**TPP** is a Python-based tool designed to detect and pseudonymize personally identifiable information (PII) in travel-related documents. It leverages custom recognizers and fake data generators for specific aviation industry entities such as Passenger Name Records (PNRs), e-tickets, flight numbers, airline and aircraft codes, and airport codes. The pseudonymization tool ensures the privacy and confidentiality of sensitive data commonly found in aviation documents, making it suitable for airline companies, travel agencies, and other organizations dealing with flight information.
 
 ## Features
 
