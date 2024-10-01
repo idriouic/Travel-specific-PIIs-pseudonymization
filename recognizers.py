@@ -25,8 +25,8 @@ def create_recognizers():
     recognizers.append(PatternRecognizer(supported_entity="ICAO_AIRCRAFT", patterns=[icao_aircraft_pattern], context=["ICAO aircraft type"]))
 
     # Airline Codes
-    iata_airline_pattern = Pattern(name="iata_airline_pattern", regex="^[A-Z][\d]|[\d][A-Z]|[A-Z]{2}$", score=1)  # Adjusted score
-    recognizers.append(PatternRecognizer(supported_entity="IATA_AIRLINE", patterns=[iata_airline_pattern], context=["IATA airline code", "airline code"]))
+#    iata_airline_pattern = Pattern(name="iata_airline_pattern", regex="^[A-Z][\d]|[\d][A-Z]|[A-Z]{2}$", score=0.6)  # Adjusted score
+#    recognizers.append(PatternRecognizer(supported_entity="IATA_AIRLINE", patterns=[iata_airline_pattern], context=["IATA airline code", "airline code"]))
 
     icao_airline_pattern = Pattern(name="icao_airline_pattern", regex="^[A-Z]{3}$", score=1)  # Adjusted score
     recognizers.append(PatternRecognizer(supported_entity="ICAO_AIRLINE", patterns=[icao_airline_pattern], context=["ICAO airline code", "operational code"]))

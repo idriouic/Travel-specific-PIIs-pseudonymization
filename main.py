@@ -67,10 +67,10 @@ if __name__ == "__main__":
 
     Thank you for your prompt attention to this matter.
 
-    Sincerely,2
+    Sincerely,
     John Doe
     Frequent Flyer Number: 123456789
-2
+
     """
 
 
