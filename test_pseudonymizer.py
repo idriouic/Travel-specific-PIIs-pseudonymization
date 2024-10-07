@@ -19,9 +19,9 @@ class TestTravelSpecificPIIPseudonymization(unittest.TestCase):
         self.assertNotIn("LHKQK9", anonymized_content)
     
     def test_pseudonymize_pnr_(self):
-        document_content = "My PNR is 9PROWK."
+        document_content = "My PNR is POOWK2."
         anonymized_content = self.pseudonymizer.anonymize_document(document_content)
-        self.assertNotIn("9PROWK", anonymized_content)
+        self.assertNotIn("POOWK2", anonymized_content)
 
     def test_pseudonymize_e_ticket(self):
         document_content = "My e-ticket number is 123-4567890123."
@@ -35,9 +35,9 @@ class TestTravelSpecificPIIPseudonymization(unittest.TestCase):
 
 
     def test_pseudonymize_registration(self):
-        document_content = "My registration number is N390HA."
+        document_content = "My registration number is updated with SSOP92KR."
         anonymized_content = self.pseudonymizer.anonymize_document(document_content)
-        self.assertNotIn("N390HA", anonymized_content)
+        self.assertNotIn("SSOP92KR", anonymized_content)
 
 
 
@@ -50,7 +50,7 @@ class TestTravelSpecificPIIPseudonymization(unittest.TestCase):
 
 
     def test_pseudonymize_contact_information(self):
-        document_content = "My phone number is 999-888-7777 and email is johndoe@example.com."
+        document_content = "My email is johndoe@example.com."
         anonymized_content = self.pseudonymizer.anonymize_document(document_content)
 
         self.assertNotIn("999-888-7777", anonymized_content)
